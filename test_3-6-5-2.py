@@ -6,7 +6,7 @@ import time
 import math
 import pytest
 
-# для старта pytest -v -s 3_6_3_step_OWLS_OvO.py
+# для старта pytest -v -s 3_6_3.py
 # s, чтоб видеть print
 # v, для того, чтобы запустить расширенный визуальный режим
 
@@ -33,7 +33,7 @@ def test_find_ufo(browser, link_task):
     input1 = browser.find_element(By.NAME, 'login')
     input1.send_keys("victoriashevkunova@gmail.com")
     input2 = browser.find_element(By.NAME, "password")
-    input2.send_keys("1047995Na")
+    input2.send_keys("***")
     button32 = browser.find_element(By.CLASS_NAME, "sign-form__btn.button_with-loader")
     button32.click()
     answer_place = WebDriverWait(browser, 55) \
