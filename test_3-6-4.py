@@ -24,7 +24,7 @@ class TestMainPage1():
         input1 = browser.find_element(By.ID, 'id_login_email')
         input1.send_keys("victoriashevkunova@gmail.com")
         input2 = browser.find_element(By.ID, "id_login_password")
-        input2.send_keys("1047995Na")
+        input2.send_keys("***")
 
         # Отправляем заполненную форму
         button = browser.find_element(By.CLASS_NAME, "sign-form__btn.button_with-loader")
